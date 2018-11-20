@@ -9,4 +9,10 @@
   border-radius: 50%;
   overflow: hidden;
   box-shadow: inset -12px -15px 80px 2px #000;
+  animation: rotate 7s linear 2s infinite normal;
+  animation-fill-mode: backwards;
+}
+
+@keyframes rotate {
+  100%{background-position: 100%}
 }
