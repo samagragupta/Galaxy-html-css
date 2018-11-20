@@ -1,6 +1,7 @@
-/* body {
+body {
   background-color: #111;
-} */
+  background: radial-gradient(#555, #000);
+}
 
 .earth {
   width: 300px;
@@ -13,11 +14,35 @@
   animation-fill-mode: backwards;
 }
 
+.sun {
+  background-color: Orange;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -52px;
+  margin-left: -36px;
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#FFB300, yellow);
+  /* box-shadow: 0px 0px 86px -9px #f5c91a; */
+  animation: sun 5s linear 2s infinite alternate;
+}
+
+@keyframes sun {
+  from {
+    box-shadow: 0px 0px 86px -9px #f5c91a;
+  }
+  to {
+    box-shadow: 0px 0px 86px 15px #f5c91a;
+  }
+}
+
 @keyframes rotate {
   from {
   background-position: 0px 0px;
-}
-to {
+  }
+  to {
   background-position: 640px 0px;
-}
+  }
 }
