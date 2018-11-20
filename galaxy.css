@@ -14,5 +14,10 @@
 }
 
 @keyframes rotate {
-  100%{background-position: 100%}
+  from {
+  background-position: 0px 0px;
+}
+to {
+  background-position: 640px 0px;
+}
 }
