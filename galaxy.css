@@ -8,10 +8,11 @@ body {
   height: 300px;
   background-image: url("earth.jpg");
   border-radius: 50%;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: inset -12px -15px 80px 2px #000;
   animation: rotate 7s linear 2s infinite normal;
   animation-fill-mode: backwards;
+  position: absolute;
 }
 
 .sun {
@@ -25,8 +26,44 @@ body {
   position: absolute;
   border-radius: 50%;
   background: radial-gradient(#FFB300, yellow);
-  /* box-shadow: 0px 0px 86px -9px #f5c91a; */
   animation: sun 5s linear 2s infinite alternate;
+}
+
+.star {
+  width: 100%;
+  height: 100%;
+  background-image: url("stars.jpg");
+  z-index: -1;
+  position: relative;
+}
+
+.earth-orbit {
+    animation: orbit 30s linear infinite;
+    height: 450px;
+    width: 400px;
+    position: absolute;
+    top: 64%;
+    left: 66%;
+    margin-top: -300px;
+    margin-left: -300px;
+    border-radius:100%;
+
+ z-index: 4;
+}
+
+.globe {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url("globe.jpg");
+  animation: orbit 14s linear infinite;
+  border-radius: 100%;
+}
+
+@keyframes orbit{
+
+    from {transform:rotate(0);}
+    to{transform: rotate(360deg); }
 }
 
 @keyframes sun {
