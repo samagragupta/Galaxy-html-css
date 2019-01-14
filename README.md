@@ -1,3 +1,3 @@
 # Galaxy-html-css
 
-![GALAXY_GIF](galaxy.gif)
+![GALAXY_PNG](galaxy.PNG)
